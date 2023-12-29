@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="getPicklistValue Adapter - Opportunity" icon-name="standard:opportunity">
+      <div class="slds-m-around_medium">
+  
+  The Kitchen Appliances  Record Type Id is: <b>{kitchenRtId}</b><br>
+  <lightning-combobox
+            label="Stage Picklist Values for Kitchen Appliances Record Type"
+            value={selectedValue}
+            placeholder="Select Stage"
+            options={options}
+            onchange={handleChange}>
+        </lightning-combobox>
+        <div class="slds-m-around_medium">
+            Stage Picklist Values for Kitchen Appliances Record Type is: <b>{selectedValue}</b> 
+        </div>
+ 
+      </div>
+    </lightning-card>
+</template>

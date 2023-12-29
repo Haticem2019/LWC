@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Homework_3" icon-name="utility:classic_interface">
+        <div class="slds-m-around_medium">
+            <h2 class="esin"> COUNTRIES</h2>
+             
+             <br>
+            <template for:each={countries} for:item="count">
+                <div key={count} class="hat">
+                    <b>{count}</b>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

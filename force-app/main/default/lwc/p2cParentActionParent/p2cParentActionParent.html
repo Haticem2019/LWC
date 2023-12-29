@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="P2C On Action at Parent">
+        <div class="slds-m-around_medium">
+            <lightning-input
+                type="search"
+                value={searchName}
+                label="Please enter search keys in order to get Contacts"
+                onkeyup={changeHandler}
+                placeholder="Type here...">
+            </lightning-input>
+            <template if:true={contacts}>
+                <div class="slds-m-top_medium">
+                    <b><u>Contact Search Results:</u></b>
+                    <c-p2c-nonprimitive-child
+                        records={contacts}
+                        field={columns}>
+                    </c-p2c-nonprimitive-child>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

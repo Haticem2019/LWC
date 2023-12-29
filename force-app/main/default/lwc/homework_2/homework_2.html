@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Homework_2" icon-name="utility:classic_interface">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Enter Password" type="password" value={secretPassword} onchange={handlePasswordChange}></lightning-input>
+        </div>
+        <div class="slds-m-around_medium">
+            <template if:true={showCongratulations}>
+                <p>Congratulations! You win!</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>

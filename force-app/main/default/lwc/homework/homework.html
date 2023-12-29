@@ -1,0 +1,27 @@
+<template>
+    <lightning-card  title="Homework_1" icon-name="utility:classic_interface">
+        <div class="slds-m-around_medium">
+
+            <lightning-input
+                label="Please enter your number 1"
+                type="number"
+                placeholder="enter here..."
+                onchange={changeHandlerNum1}
+                value="">
+            </lightning-input>
+            <lightning-input
+                label="Please enter your number 2"
+                class="slds-m-top_small"
+                type="number"
+                placeholder="enter here..."
+                onchange={changeHandlerNum2}
+                value="">
+            </lightning-input>
+            <div class="apple">
+                The product of <b>{num1}</b> and <b>{num2}</b> is <b>{product}</b>.
+            </div>
+
+
+        </div>
+    </lightning-card>
+</template>

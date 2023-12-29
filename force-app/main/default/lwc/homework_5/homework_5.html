@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Homework_5" icon-name="utility:classic_interface">
+        <div class="slds-m-around_medium">
+           <p><B>My name and Role</B></p>
+            <lightning-input
+            label="Please enter your Name"
+            type="text"
+            placeholder="enter here.."
+            onchange={changeHandlerName}
+            value="">
+        </lightning-input>
+    <lightning-combobox
+            name="Please Enter"
+            label="Please enter your Role"
+            value={value}
+            placeholder="Select your Role"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+    <p>Hello, my name is <B>{usName}</B>  and my role is <B>{value}</B> </p>
+</div>
+</lightning-card>
+</template>

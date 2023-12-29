@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Track Property" icon-name="doctype:library_folder">
+        <div class="slds-m-around_medium">
+            <lightning-input
+                type="text"
+                label="Update Steve's location"
+                value=""
+                onkeyup={handleChange}>
+            </lightning-input>
+            <lightning-input
+            type="text"
+            label="Update Steve's Name"
+            value=""
+            onkeyup={handleChangeName}>
+        </lightning-input>
+        <lightning-input
+        type="text"
+        label="Update Steve's company"
+        value=""
+        onkeyup={handleChangeCompany}>
+    </lightning-input>
+            <div>
+                <b>{contact.name}</b> lives in <b>{contact.location} works in {contact.company}</b>.
+            </div>
+        </div>
+    </lightning-card>
+</template>

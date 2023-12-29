@@ -1,0 +1,14 @@
+.title {
+    
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
+    background-color: gainsboro;
+}
+
+.contact-item {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(27, 2, 32);
+    background-color: rgb(221, 162, 215);
+}
